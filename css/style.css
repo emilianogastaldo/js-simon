@@ -15,3 +15,19 @@ header {
     margin: 10px auto;
     text-align: center;
 }
+
+#guess-number {
+    text-align: center;
+}
+
+#guess-number span {
+    margin-left: 40px;
+    font-size: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: 2px 2px 5px lightgray;
+}

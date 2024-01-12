@@ -16,5 +16,9 @@ const getNumbers = () => {
     }
     return numbers;
 }
-const prova = getNumbers();
-console.log(prova)
+const toGuessNumbers = getNumbers();
+let toGuessNumbersText = '';
+for (let i = 0; i < toGuessNumbers.length; i++) {
+    toGuessNumbersText += `<span>${toGuessNumbers[i]}</span>`;
+}
+guessNumberText.innerHTML = toGuessNumbersText;
