@@ -22,8 +22,12 @@ header {
     text-align: center;
 }
 
-#guess-number {
+main {
     text-align: center;
+}
+
+#guess-number {
+    margin: 40px 0;
 }
 
 #guess-number span {
@@ -39,6 +43,5 @@ header {
 }
 
 #result-message {
-    text-align: center;
     font-size: 40px;
 }
