@@ -32,14 +32,21 @@ guessNumberElement.innerHTML = toGuessNumbersText;
 setTimeout(() => {
     guessNumberElement.classList.add('hidden');
     setTimeout(() => {
+        let playerScore = 0;
         let message = 'Hai indovitano i seguenti numeri: ';
         for (let i = 0; i < toGuessNumbers.length; i++) {
             const playerNumber = parseInt(prompt('Dammi un numero'));
-            if (toGuessNumbers.includes(playerNumber)) message += playerNumber + ' ';
+            if (toGuessNumbers.includes(playerNumber)) {
+                message += playerNumber + ' ';
+                playerScore++;
+            }
         }
-        console.log(message);
-
-        resultMessage.innerText = message;
+        if (playerScore === 0) {
+            message = 'Mi dispiace, non hai indivinato nessun numero'
+        } else if (playerScore === toGuessNumbers.length) {
+            message += '<br>WOW li hai ricordati tutti!'
+        }
+        resultMessage.innerHTML = message;
 
     }, 1000);
 }, 3000);

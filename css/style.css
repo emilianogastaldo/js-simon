@@ -37,3 +37,8 @@ header {
     line-height: 100px;
     box-shadow: 2px 2px 5px lightgray;
 }
+
+#result-message {
+    text-align: center;
+    font-size: 40px;
+}
