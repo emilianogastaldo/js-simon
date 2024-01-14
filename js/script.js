@@ -42,7 +42,7 @@ setTimeout(() => {
         let playerScore = 0;
 
         //Creo il messaggio
-        message = 'Hai indovitano i seguenti numeri: ';
+        let message = 'Hai indovitano i seguenti numeri: ';
 
         // Controllo se i numeri inseriti dal player corrispondono
         for (let i = 0; i < toGuessNumbers.length; i++) {
