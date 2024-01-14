@@ -13,7 +13,8 @@
 
     <!-- Collego i miei fogli css e js -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/esercizio_array.js" defer></script>
+    <!-- <script src="js/script.js" defer></script> -->
 </head>
 
 <body>
@@ -23,9 +24,12 @@
     <main>
         <div id="guess-number"></div>
         <div id="result-message"></div>
-        <label for="player-input">Inserisci un numero</label>
-        <input id="player-input" type="text">
-        <button type="button">Invia</button>
+        <form id="form-game">
+            <label for="player-input">Inserisci un numero</label>
+            <input id="player-input" type="text">
+            <button id="play-btn" type="submit">Invia</button>
+        </form>
+        <p id="alert"></p>
     </main>
 </body>
 
