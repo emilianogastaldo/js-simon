@@ -1,11 +1,11 @@
 // Recupero gli oggeti dall'html
-
+const countdown = document.getElementById('countdown');
 const guessNumberElement = document.getElementById('guess-number');
 const resultMessage = document.getElementById('result-message');
-const playerInput = document.getElementById('player-input');
-const buttonPlay = document.getElementById('play-btn');
 const formGame = document.getElementById('form-game');
-const startButton = document.getElementById('start-btn');
+const playerInput = document.querySelectorAll('.player-input');
+const buttonPlay = document.getElementById('play-btn');
+// const startButton = document.getElementById('start-btn');
 const alertMex = document.getElementById('alert');
 
 
@@ -24,15 +24,18 @@ const getNumbers = (number) => {
     return numbers;
 }
 
+//Info iniziali
+const min = 1;
+const max = 100;
+const questNumber = 5;
+const time = 5;
+
 // Nascondo il form e l'alert
 formGame.classList.add('hidden');
 alertMex.classList.add('hidden');
 
-//Decido quanti numeri bisogna indovinare
-const questNumber = 5
-
-
-// Pulsante per iniziare a giocare
+// Inizializzo il countdown
+countdown.innerText = time;
 
 // Array per salvare i numeri del giocatore
 const playerNumbers = [];
@@ -44,7 +47,7 @@ const toGuessNumbers = getNumbers(questNumber);
 setTimeout(() => {
     let toGuessNumbersText = '';
     for (let i = 0; i < toGuessNumbers.length; i++) {
-        toGuessNumbersText += `<span>${toGuessNumbers[i]}</span>`;
+        toGuessNumbersText += `<li>${toGuessNumbers[i]}</li>`;
     }
 
     console.log(toGuessNumbers);
