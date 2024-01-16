@@ -30,7 +30,7 @@ main {
     margin: 40px 0;
 }
 
-#guess-number span {
+#guess-number li {
     margin-left: 40px;
     font-size: 50px;
     border: 1px solid white;
@@ -44,4 +44,14 @@ main {
 
 #result-message {
     font-size: 40px;
+}
+
+.player-input {
+    margin-left: 10px;
+    width: 50px;
+}
+
+#play-btn {
+    padding: 5px 10px;
+    margin-top: 15px;
 }
